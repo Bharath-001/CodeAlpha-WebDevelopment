@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        section{
+ 
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* about section styling */
+.about{
+    background: linear-gradient(to right, #fc98fc, #f9ee8e);
+    background-size: cover;
+
+}
+.about .title::after {
+   
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Linear Gradiant */
+.about .about-content .right .text span {
+    background: crimson;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: #ff0000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #1e3551;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="assets\css\nav.css">
+    <link rel="stylesheet" href="assets\css\main.css">
+</head>
+<body>
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="assets/images/curriculum-vitae.png" alt="" class="navbar-brand-icon">
+                        <span class="navbar-brand-text">Resume<span>.Bulider</span>
+                    </a>
+                    <ul>
+    
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
+                    </ul>
+    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="">
+                    <h2>Resume Bulider:</h2>
+                    <div class="text">
+                    At Resume Builder Online, we understand the importance of a well-crafted resume in today's competitive job market. Our
+                    platform is designed to empower individuals like you to create professional resumes that effectively showcase your
+                    skills, experience, and achievements.
+                    <br><br>
+                    With our user-friendly interface and extensive range of templates, you can easily build a customized resume that
+                    reflects your unique strengths and career aspirations. Whether you're a seasoned professional looking to advance your
+                    career or a recent graduate taking your first steps into the workforce, our Resume Builder has got you covered.
+                    <br><br>
+                    We believe that everyone deserves a chance to shine, and that starts with a standout resume. Our mission is to provide a
+                    comprehensive and intuitive tool that helps job seekers like you unlock new opportunities and make a lasting impression
+                    on potential employers.
+                    <br><br>
+                    Join thousands of satisfied users who have successfully used our Resume Builder to create compelling resumes that have
+                    opened doors to their dream careers. Start building your professional path with confidence today with Resume Builder
+                    Online.</p>
+                   <br><br><br><br><br><br><br><br><br>
+    
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>Resume Bulider</span></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+         function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+    </script>
+</body>
+</html>
